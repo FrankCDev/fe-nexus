@@ -1,4 +1,24 @@
 {
-	"$schema": "./node_modules/nx/schemas/nx-schema.json",
-	"nxCloudId": "67dfa4719a6f7402d44cf0d3"
+  "$schema": "./node_modules/nx/schemas/nx-schema.json",
+  "targetDefaults": {
+    "build": {
+      "dependsOn": ["^build"],
+      "outputs": ["{projectRoot}/dist"],
+      "cache": true
+    }
+  },
+  "plugins": [
+    {
+      "plugin": "@nx/rsbuild",
+      "options": {
+        "buildTargetName": "rsbuild:build",
+        "devTargetName": "rsbuild:dev",
+        "previewTargetName": "rsbuild:preview",
+        "inspectTargetName": "inspect",
+        "typecheckTargetName": "typecheck",
+        "buildDepsTargetName": "build-deps",
+        "watchDepsTargetName": "watch-deps"
+      }
+    }
+  ]
 }

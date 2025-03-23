@@ -1,35 +1,43 @@
 {
-	"name": "fe-nexus",
-	"version": "1.0.0",
-	"description": "",
-	"main": "index.js",
-	"scripts": {
-		"format": "npx biome check . --diagnostic-level=warn --no-errors-on-unmatched --fix",
-		"check": "biome check --write",
-		"prepare": "simple-git-hooks",
-		"remove-hooks": "simple-git-hooks remove"
-	},
-	"engines": {
-		"node": ">=18.20.0",
-		"pnpm": ">=9.14.3"
-	},
-	"keywords": [],
-	"author": "",
-	"license": "ISC",
-	"packageManager": "pnpm@9.14.3",
-	"simple-git-hooks": {
-		"pre-commit": "npx lint-staged"
-	},
-	"lint-staged": {
-		"*.{md,mdx,json,css,less,scss}": "pnpm format",
-		"*.{js,jsx,ts,tsx,mjs,cjs}": "pnpm format"
-	},
-	"devDependencies": {
-		"@biomejs/biome": "^1.9.4",
-		"lint-staged": "^15.5.0",
-		"nano-staged": "^0.8.0",
-		"nx": "20.6.2",
-		"pretty-quick": "^4.1.1",
-		"simple-git-hooks": "^2.12.1"
-	}
+  "name": "fe-nexus",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "nx run-many --target=build --projects=rsbuild-react,core --verbose --skipNxCache",
+    "lint": "npx biome check . --diagnostic-level=warn --no-errors-on-unmatched --fix --unsafe",
+    "check": "biome check --write",
+    "format:ci": "pretty-quick --since HEAD~1",
+    "format": "pretty-quick --staged",
+    "prepare": "simple-git-hooks",
+    "remove-hooks": "simple-git-hooks remove"
+  },
+  "engines": {
+    "node": ">=18.20.0",
+    "pnpm": ">=9.14.3"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "packageManager": "pnpm@9.14.3",
+  "simple-git-hooks": {
+    "commit-msg": "npx commitlint --edit ${1}",
+    "pre-commit": "npx lint-staged"
+  },
+  "lint-staged": {
+    "*.{md,mdx,json,css,less,scss}": "pnpm lint",
+    "*.{js,jsx,ts,tsx,mjs,cjs}": "pnpm lint"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "^1.9.4",
+    "@commitlint/cli": "^19.8.0",
+    "@commitlint/config-conventional": "^19.8.0",
+    "@nx/rsbuild": "20.6.2",
+    "@rsbuild/core": "1.1.10",
+    "lint-staged": "^15.5.0",
+    "nx": "20.6.2",
+    "prettier": "^3.5.3",
+    "pretty-quick": "^4.1.1",
+    "simple-git-hooks": "^2.12.1"
+  }
 }
