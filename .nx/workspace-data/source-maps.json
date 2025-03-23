@@ -1,0 +1,186 @@
+{
+	"apps/rsbuild-react": {
+		"root": ["apps/rsbuild-react/package.json", "nx/core/package-json"],
+		"name": ["apps/rsbuild-react/package.json", "nx/core/package-json"],
+		"tags": ["apps/rsbuild-react/package.json", "nx/core/package-json"],
+		"tags.npm:private": [
+			"apps/rsbuild-react/package.json",
+			"nx/core/package-json"
+		],
+		"metadata.targetGroups": [
+			"apps/rsbuild-react/package.json",
+			"nx/core/package-json"
+		],
+		"metadata.targetGroups.NPM Scripts": [
+			"apps/rsbuild-react/package.json",
+			"nx/core/package-json"
+		],
+		"metadata.targetGroups.NPM Scripts.0": [
+			"apps/rsbuild-react/package.json",
+			"nx/core/package-json"
+		],
+		"metadata.targetGroups.NPM Scripts.1": [
+			"apps/rsbuild-react/package.json",
+			"nx/core/package-json"
+		],
+		"metadata.targetGroups.NPM Scripts.2": [
+			"apps/rsbuild-react/package.json",
+			"nx/core/package-json"
+		],
+		"metadata.targetGroups.NPM Scripts.3": [
+			"apps/rsbuild-react/package.json",
+			"nx/core/package-json"
+		],
+		"metadata.targetGroups.NPM Scripts.4": [
+			"apps/rsbuild-react/package.json",
+			"nx/core/package-json"
+		],
+		"metadata.js": ["apps/rsbuild-react/package.json", "nx/core/package-json"],
+		"metadata.js.packageName": [
+			"apps/rsbuild-react/package.json",
+			"nx/core/package-json"
+		],
+		"metadata.js.isInPackageManagerWorkspaces": [
+			"apps/rsbuild-react/package.json",
+			"nx/core/package-json"
+		],
+		"targets": ["apps/rsbuild-react/package.json", "nx/core/package-json"],
+		"targets.build": [
+			"apps/rsbuild-react/package.json",
+			"nx/core/package-json"
+		],
+		"targets.build.executor": [
+			"apps/rsbuild-react/package.json",
+			"nx/core/package-json"
+		],
+		"targets.build.options": [
+			"apps/rsbuild-react/package.json",
+			"nx/core/package-json"
+		],
+		"targets.build.metadata": [
+			"apps/rsbuild-react/package.json",
+			"nx/core/package-json"
+		],
+		"targets.build.options.script": [
+			"apps/rsbuild-react/package.json",
+			"nx/core/package-json"
+		],
+		"targets.build.metadata.scriptContent": [
+			"apps/rsbuild-react/package.json",
+			"nx/core/package-json"
+		],
+		"targets.build.metadata.runCommand": [
+			"apps/rsbuild-react/package.json",
+			"nx/core/package-json"
+		],
+		"targets.check": [
+			"apps/rsbuild-react/package.json",
+			"nx/core/package-json"
+		],
+		"targets.check.executor": [
+			"apps/rsbuild-react/package.json",
+			"nx/core/package-json"
+		],
+		"targets.check.options": [
+			"apps/rsbuild-react/package.json",
+			"nx/core/package-json"
+		],
+		"targets.check.metadata": [
+			"apps/rsbuild-react/package.json",
+			"nx/core/package-json"
+		],
+		"targets.check.options.script": [
+			"apps/rsbuild-react/package.json",
+			"nx/core/package-json"
+		],
+		"targets.check.metadata.scriptContent": [
+			"apps/rsbuild-react/package.json",
+			"nx/core/package-json"
+		],
+		"targets.check.metadata.runCommand": [
+			"apps/rsbuild-react/package.json",
+			"nx/core/package-json"
+		],
+		"targets.dev": ["apps/rsbuild-react/package.json", "nx/core/package-json"],
+		"targets.dev.executor": [
+			"apps/rsbuild-react/package.json",
+			"nx/core/package-json"
+		],
+		"targets.dev.options": [
+			"apps/rsbuild-react/package.json",
+			"nx/core/package-json"
+		],
+		"targets.dev.metadata": [
+			"apps/rsbuild-react/package.json",
+			"nx/core/package-json"
+		],
+		"targets.dev.options.script": [
+			"apps/rsbuild-react/package.json",
+			"nx/core/package-json"
+		],
+		"targets.dev.metadata.scriptContent": [
+			"apps/rsbuild-react/package.json",
+			"nx/core/package-json"
+		],
+		"targets.dev.metadata.runCommand": [
+			"apps/rsbuild-react/package.json",
+			"nx/core/package-json"
+		],
+		"targets.format": [
+			"apps/rsbuild-react/package.json",
+			"nx/core/package-json"
+		],
+		"targets.format.executor": [
+			"apps/rsbuild-react/package.json",
+			"nx/core/package-json"
+		],
+		"targets.format.options": [
+			"apps/rsbuild-react/package.json",
+			"nx/core/package-json"
+		],
+		"targets.format.metadata": [
+			"apps/rsbuild-react/package.json",
+			"nx/core/package-json"
+		],
+		"targets.format.options.script": [
+			"apps/rsbuild-react/package.json",
+			"nx/core/package-json"
+		],
+		"targets.format.metadata.scriptContent": [
+			"apps/rsbuild-react/package.json",
+			"nx/core/package-json"
+		],
+		"targets.format.metadata.runCommand": [
+			"apps/rsbuild-react/package.json",
+			"nx/core/package-json"
+		],
+		"targets.preview": [
+			"apps/rsbuild-react/package.json",
+			"nx/core/package-json"
+		],
+		"targets.preview.executor": [
+			"apps/rsbuild-react/package.json",
+			"nx/core/package-json"
+		],
+		"targets.preview.options": [
+			"apps/rsbuild-react/package.json",
+			"nx/core/package-json"
+		],
+		"targets.preview.metadata": [
+			"apps/rsbuild-react/package.json",
+			"nx/core/package-json"
+		],
+		"targets.preview.options.script": [
+			"apps/rsbuild-react/package.json",
+			"nx/core/package-json"
+		],
+		"targets.preview.metadata.scriptContent": [
+			"apps/rsbuild-react/package.json",
+			"nx/core/package-json"
+		],
+		"targets.preview.metadata.runCommand": [
+			"apps/rsbuild-react/package.json",
+			"nx/core/package-json"
+		]
+	}
+}
