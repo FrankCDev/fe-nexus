@@ -16,12 +16,12 @@ export default defineConfig({
   ],
   output: {
     target: 'web',
-    copy: [
-      {
-        from: path.resolve(__dirname, './styles'),
-        to: path.resolve(__dirname, './dist/styles'),
-      },
-    ],
+    // copy: [
+    //   {
+    //     from: path.resolve(__dirname, './styles'),
+    //     to: path.resolve(__dirname, './dist/styles'),
+    //   },
+    // ],
   },
   plugins: [pluginReact()],
 });
