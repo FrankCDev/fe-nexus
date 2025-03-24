@@ -19,7 +19,7 @@ importers:
         version: 19.8.0
       '@nx/rsbuild':
         specifier: 20.6.2
-        version: 20.6.2(@babel/traverse@7.26.10)(@types/node@22.13.11)(nx@20.6.2)(typescript@5.8.2)
+        version: 20.6.2(@types/node@22.13.11)(nx@20.6.2)(typescript@5.8.2)
       '@rsbuild/core':
         specifier: 1.1.10
         version: 1.1.10
@@ -39,7 +39,7 @@ importers:
         specifier: ^2.12.1
         version: 2.12.1
 
-  apps/rsbuild-react:
+  apps/awork-web:
     dependencies:
       '@fe-nexus/core':
         specifier: workspace:*
@@ -1702,12 +1702,6 @@ packages:
 
   babel-plugin-transform-typescript-metadata@0.3.2:
     resolution: {integrity: sha512-mWEvCQTgXQf48yDqgN7CH50waTyYBeP2Lpqx4nNWab9sxEpdXVeKgfj1qYI2/TgUPQtNFZ85i3PemRtnXVYYJg==}
-    peerDependencies:
-      '@babel/core': ^7
-      '@babel/traverse': ^7
-    peerDependenciesMeta:
-      '@babel/traverse':
-        optional: true
 
   balanced-match@1.0.2:
     resolution: {integrity: sha512-3oSeUO0TMV67hN1AmbXsK4yaqU7tjiHlbxRDZOpH0KW9+CeX4bRAaX0Anxt0tx2MrpRpWwQaPwIlISEJhYU5Pw==}
@@ -4219,7 +4213,7 @@ snapshots:
       tslib: 2.8.1
       yargs-parser: 21.1.1
 
-  '@nx/js@20.6.2(@babel/traverse@7.26.10)(@types/node@22.13.11)(nx@20.6.2)(typescript@5.8.2)':
+  '@nx/js@20.6.2(@types/node@22.13.11)(nx@20.6.2)(typescript@5.8.2)':
     dependencies:
       '@babel/core': 7.26.10
       '@babel/plugin-proposal-decorators': 7.25.9(@babel/core@7.26.10)
@@ -4233,7 +4227,7 @@ snapshots:
       '@zkochan/js-yaml': 0.0.7
       babel-plugin-const-enum: 1.2.0(@babel/core@7.26.10)
       babel-plugin-macros: 3.1.0
-      babel-plugin-transform-typescript-metadata: 0.3.2(@babel/core@7.26.10)(@babel/traverse@7.26.10)
+      babel-plugin-transform-typescript-metadata: 0.3.2
       chalk: 4.1.2
       columnify: 1.6.0
       detect-port: 1.6.1
@@ -4253,7 +4247,6 @@ snapshots:
       tsconfig-paths: 4.2.0
       tslib: 2.8.1
     transitivePeerDependencies:
-      - '@babel/traverse'
       - '@swc-node/register'
       - '@swc/core'
       - '@swc/wasm'
@@ -4293,16 +4286,15 @@ snapshots:
   '@nx/nx-win32-x64-msvc@20.6.2':
     optional: true
 
-  '@nx/rsbuild@20.6.2(@babel/traverse@7.26.10)(@types/node@22.13.11)(nx@20.6.2)(typescript@5.8.2)':
+  '@nx/rsbuild@20.6.2(@types/node@22.13.11)(nx@20.6.2)(typescript@5.8.2)':
     dependencies:
       '@nx/devkit': 20.6.2(nx@20.6.2)
-      '@nx/js': 20.6.2(@babel/traverse@7.26.10)(@types/node@22.13.11)(nx@20.6.2)(typescript@5.8.2)
+      '@nx/js': 20.6.2(@types/node@22.13.11)(nx@20.6.2)(typescript@5.8.2)
       '@phenomnomnominal/tsquery': 5.0.1(typescript@5.8.2)
       '@rsbuild/core': 1.1.8
       minimatch: 9.0.3
       tslib: 2.8.1
     transitivePeerDependencies:
-      - '@babel/traverse'
       - '@swc-node/register'
       - '@swc/core'
       - '@swc/wasm'
@@ -4800,12 +4792,9 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  babel-plugin-transform-typescript-metadata@0.3.2(@babel/core@7.26.10)(@babel/traverse@7.26.10):
+  babel-plugin-transform-typescript-metadata@0.3.2:
     dependencies:
-      '@babel/core': 7.26.10
       '@babel/helper-plugin-utils': 7.26.5
-    optionalDependencies:
-      '@babel/traverse': 7.26.10
 
   balanced-match@1.0.2: {}
 

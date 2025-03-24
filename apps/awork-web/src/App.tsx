@@ -1,7 +1,7 @@
-import '@fe-nexus/ui/styles/theme.css';
-
 import { squared } from '@fe-nexus/core';
 import { Button } from '@fe-nexus/ui';
+import '@fe-nexus/ui/styles/theme.css';
+import './App.css';
 
 const App = () => {
   return (
@@ -42,6 +42,7 @@ const App = () => {
               >
                 了解更多
               </Button>
+              <Button>test</Button>
             </div>
 
             <div className="flex items-center justify-center space-x-3 mt-6">

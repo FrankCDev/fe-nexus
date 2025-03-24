@@ -4,13 +4,13 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "nx run-many --target=build --projects=rsbuild-react,core --verbose --skipNxCache",
+    "build": "nx run-many --target=build --projects=core,ui --verbose --skipNxCache",
     "lint": "npx biome check . --diagnostic-level=warn --no-errors-on-unmatched --fix --unsafe",
     "check": "biome check --write",
     "format:ci": "pretty-quick --since HEAD~1",
     "format": "pretty-quick --staged",
-    "prepare": "simple-git-hooks",
-    "remove-hooks": "simple-git-hooks remove"
+    "prepare": "pnpm build && simple-git-hooks",
+    "remove-hooks": "pnpm simple-git-hooks remove"
   },
   "engines": {
     "node": ">=18.20.0",
